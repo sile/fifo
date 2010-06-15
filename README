@@ -1,0 +1,23 @@
+[概要]
+リストによる破壊的なFIFOキューの実装
+
+[API]
+Package# fifo
+ - パッケージ
+
+Function# make &optional initial-contents
+ - キューを作成する
+ - initial-contents: キューの初期要素を格納したリスト
+
+Function# push elem fifo-queue
+ - キューの末端に要素を追加する
+ - 要素格納後のキューを返す
+
+Function# pop fifo-queue
+ - キューの先頭から要素を取り出して返す
+
+Function# empty-p fifo-queue
+ - キューが空かどうか
+
+Function# to-list fifo-queue
+ - キューに格納されている要素をリストとして返す
